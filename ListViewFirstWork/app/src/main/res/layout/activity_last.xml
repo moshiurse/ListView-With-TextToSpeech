@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
+    android:background="#e6ca13"
     android:gravity="center"
     tools:context="com.akaimma.listviewfirstwork.LastActivity">
 
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Name"
+        android:textColor="#1864d6"
         android:id="@+id/opName"
         android:gravity="center"
         android:textSize="40dp"/>
@@ -25,6 +27,7 @@
         android:text="Phone"
         android:id="@+id/opPhone"
         android:gravity="center"
+        android:textColor="#6dd20f"
         android:textSize="40dp"/>
 
     <TextView
@@ -34,6 +37,7 @@
         android:text="Email"
         android:id="@+id/opEmail"
         android:gravity="center"
-        android:textSize="40dp"/>
+        android:textColor="#d61818"
+        android:textSize="30dp"/>
 
 </LinearLayout>
