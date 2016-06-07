@@ -16,10 +16,15 @@ public class MainActivity extends AppCompatActivity {
 
     TextToSpeech textToSpeech;
     ListView listView;
-    String etName[] = {"Moshiur", "Motiur", "Nahid", "Utpal", "Hasan", "Ashraf", "Babu", "Arif", "Borhan"};
+   String etName[] = {"Moshiur", "Motiur", "Nahid", "Utpal", "Hasan", "Ashraf", "Babu",
+            "Arif", "Borhan", "Dipta", "Tuhin", "shuvo", "rabbani"};
+
     String etEmail[] = {"Moshiur@gmail.com", "Motiur@gmail.com", "Nahid@gmail.com", "Utpal@gmail.com", "Hasan@gmail.com",
-            "Ashraf@gmail.com", "Babu@gmail.com", "Arif@gmail.com", "Borhan@gmail.com"};
-    String etPhone[] = {"01828", "34567", "565562", "9845525", "3325966", "9845266", "86241", "32585", "852414"};
+            "Ashraf@gmail.com", "Babu@gmail.com", "Arif@gmail.com", "Borhan@gmail.com","Dipta@gmail.com",
+            "tuhin@gmail.com", "shuvo@gmail.com", "rabbani@gmail.com"};
+
+    String etPhone[] = {"01828", "34567", "565562", "9845525", "3325966", "9845266",
+            "86241", "32585", "852414", "234567","34567","456789","567899"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if (status != TextToSpeech.ERROR){
-                    textToSpeech.setLanguage(Locale.ENGLISH);
+                    textToSpeech.setLanguage(Locale.Uk);
                 }
             }
         });
@@ -50,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("phone", etPhone[position]);
                 i.putExtra("email", etEmail[position]);
                 startActivity(i);
-//                Toast.makeText(MainActivity.this, "Clicked At "+etName[position], Toast.LENGTH_SHORT).show();
             }
         });
 
